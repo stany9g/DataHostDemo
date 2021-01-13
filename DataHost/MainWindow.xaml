@@ -1,0 +1,16 @@
+﻿<Window x:Class="DataHost.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:DataHost"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow">
+    <materialDesign:DialogHost CloseOnClickAway="True">
+        <StackPanel>
+            <Button Command="{Binding DialogA}" Content="A" />
+            <Button Command="{Binding DialogB}" Content="B" />
+        </StackPanel>
+
+    </materialDesign:DialogHost>
+</Window>

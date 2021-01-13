@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="DataHost.DialogB"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBox Text="DialogB" />
+        <DataGrid Grid.Row="1" ItemsSource="{Binding Animals}" />
+    </Grid>
+</UserControl>
